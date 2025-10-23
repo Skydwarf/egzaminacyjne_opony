@@ -1,0 +1,7 @@
+kw1- SELECT * FROM OPONY ORDER BY cena ASC LIMIT 10;
+
+kw2- SELECT `producent`,`model`,`sezon`,`cena` FROM `OPONY` WHERE `nr_kat` = 9;
+
+kw3- SELECT zamowienie.id_zam,zamowienie.ilosc,opony.cena,opony.model FROM opony JOIN zamowienie ON opony.nr_kat=zamowienie.nr_kat ORDER BY RAND() LIMIT 1;
+
+kw4- UPDATE OPONY SET cena = cena * 0.75 WHERE sezon='letnia';
